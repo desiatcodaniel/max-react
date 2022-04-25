@@ -1,7 +1,7 @@
 import './ExpenseItem.css'
 
 function ExpenseItem(props) {
-  const date = props.date.toLocaleString()
+  const date = props.date.toDateString()
   return (
     <div className="expense-item">
       <div>{date}</div>
