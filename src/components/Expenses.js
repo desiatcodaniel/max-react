@@ -1,11 +1,12 @@
 import './Expenses.css'
 import ExpenseItem from './ExpenseItem'
+import Card from './Card'
 
 function Expenses(props) {
   const expenses = props.expenses
   return (
     //Map all data into ExpenseItem Component
-    <div className="expenses">
+    <Card className="expenses">
       {expenses.map((item) => {
         return (
           <ExpenseItem
@@ -15,7 +16,7 @@ function Expenses(props) {
             key={item.id}></ExpenseItem>
         )
       })}
-    </div>
+    </Card>
   )
 }
 
